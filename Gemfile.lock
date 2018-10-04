@@ -78,6 +78,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.16)
+  google-cloud-bigtable
   rake (~> 10.0)
   rspec (~> 3.0)
   simple_bigtable_client!
