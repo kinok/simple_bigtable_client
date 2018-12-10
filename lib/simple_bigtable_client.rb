@@ -1,8 +1,8 @@
 require "simple_bigtable_client/version"
-require 'google/cloud/bigtable/v2'
+require "google-cloud-bigtable"
 
 class SimpleBigtableClient
-  def initialize(instance, project_id: ENV['GOOGLE_CLOUD_PROJECT'], bigtable_client: Google::Cloud::Bigtable::V2.new)
+  def initialize(instance, project_id: ENV['GOOGLE_CLOUD_PROJECT'], bigtable_client: Google::Cloud.new.bigtable)
     @instance = instance
     @bigtable_client = bigtable_client
     @project_id = project_id
